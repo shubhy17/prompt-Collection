@@ -166,11 +166,11 @@ graph TD
     Q2 -->|Yes| Filter[Use **Filter**]
     Q2 -->|No| Q3{Need to modify<br/>HTTP Headers broadly?}
     
-    Q3 -->|Yes| Filter[Use **Filter**<br/>(e.g., CORS, Compression)]
+    Q3 -->|Yes| Filter[Use **Filter**<br/>]
     Q3 -->|No| Q4{Need to know which<br/>Controller method?}
     
     Q4 -->|Yes| Interceptor[Use **Interceptor**]
-    Q4 -->|No| Filter[Use **Filter**<br/>(Simpler, lighter)]
+    Q4 -->|No| Filter[Use **Filter**<br/>]
 
     style Interceptor fill:#9B59B6,stroke:#8E44AD,color:#fff
     style Filter fill:#3498DB,stroke:#2980B9,color:#fff
